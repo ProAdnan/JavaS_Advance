@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+
+
+        const str = "Elie";
+        const str2 = "Adnan";
+
+
+        console.log(vowelCount(str));
+        console.log(vowelCount(str2));
+
+        function vowelCount(str) {
+
+
+            const vowel = ['a', 'e', 'i', 'o', 'u'];
+            const obj = {};
+            str = str.toLowerCase();
+            let arr = str.split("");
+
+
+
+            arr.forEach(
+
+                function (item, index) {
+
+                    if (vowel.includes(arr[index])) {
+
+                        if (obj[arr[index]]) {
+                            obj[arr[index]]++;
+                        } else {
+
+                            obj[arr[index]] = 1;
+                        }
+
+                    }
+
+                }
+
+
+
+            );
+
+
+            return obj;
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

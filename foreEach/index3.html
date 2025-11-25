@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1 id="result"></h1>
+    <h1 id="result2"></h1>
+
+    <script>
+
+        const arr1 = ['colt','matt', 'tim', 'udemy'];
+        const arr2 = ['hi', 'goodbye', 'smile'];
+
+
+
+        document.getElementById("result").innerHTML = showFirstAndLast(arr1);
+        document.getElementById("result2").innerHTML = showFirstAndLast(arr2);
+
+
+        function showFirstAndLast(arr) {
+
+            const new_arr = [];
+
+
+
+            arr.forEach(
+                
+            
+           function(item,index){
+            
+
+            new_arr.push(item[0] + item[item.length-1]);
+
+           }
+        
+        
+        );
+
+
+            return new_arr;
+        }
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

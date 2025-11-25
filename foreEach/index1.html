@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1 id="result"></h1>
+    <h1 id="result2"></h1>
+
+
+    <script>
+
+
+        const arr1 = [1, 2, 3];
+        const arr2 = [5, 1, 2, 3, 10];
+
+
+
+        document.getElementById("result").innerHTML = doubleValues(arr1);
+        document.getElementById("result2").innerHTML = doubleValues(arr2);
+
+
+
+        function doubleValues(arr) {
+
+            const newArr = [];
+
+            arr.forEach(
+                
+            function (item) {
+
+                newArr.push(item * 2);
+
+            }
+        
+        );
+            
+            return newArr;
+
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
