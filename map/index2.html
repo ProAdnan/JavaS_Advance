@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <h1 id="result"></h1>
+
+
+
+    <script>
+
+        const nums = [2, 5, 100];
+
+
+        document.getElementById("result").innerHTML=stringItUp(nums);
+
+        console.log(stringItUp(nums));
+
+        function stringItUp(arr) {
+
+
+            let result = arr.map(
+
+
+            function(item, index, fullArray){
+
+              return item=String(item);
+                
+
+
+            }
+
+
+            );
+
+
+
+            return result;
+
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>

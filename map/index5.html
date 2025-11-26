@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<h1 id="result"></h1>
+
+
+    <script>    
+
+        const people = [
+    {
+        name: "Angelina Jolie",
+        age: 80
+    },
+    {
+        name: "Eric Jones",
+        age: 2
+    },
+    {
+        name: "Paris Hilton",
+        age: 5
+    },
+    {
+        name: "Kayne West",
+        age: 16
+    },
+
+    {
+        name: "millie Ziroll",
+        age: 100
+    }
+
+    ];
+
+
+
+        document.getElementById("result").innerHTML=makeStrings(people);
+
+        console.log(makeStrings(people));
+
+
+        function makeStrings(arr) {
+
+            let result = arr.map(
+
+                function (item,index) {
+
+                    if(item.age < 18){
+                        return item.name + "is under age!!<br>";
+                    }else{
+
+
+                        return item.name + "can go to The Matrix <br>";
+
+                    }
+
+                }
+
+
+            );
+
+
+
+                return result;
+        }
+
+
+    </script>
+
+
+    
+</body>
+</html>

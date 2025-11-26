@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="result"></h1>
+
+
+    <script>
+
+        const people =[{name: 'Elie'}, {name: 'Tim'}, {name: 'Matt'}, {name: 'Colt'}];
+
+
+
+        document.getElementById("result").innerHTML = extractKey(people , 'name');
+        console.log(extractKey(people , 'name'));
+
+
+        function extractKey(arr,key) {
+            
+
+            let result = arr.map(
+
+                function (item, index) {
+                    
+                    return item[key];
+
+                }
+
+
+            );
+
+            return result;
+
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
